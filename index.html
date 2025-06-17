@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedala IF - Compartilhamento de Bicicletas no IF Goiano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .step-number {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #22c55e;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .sponsor-logo {
+            transition: all 0.3s ease;
+            filter: grayscale(30%);
+        }
+        .sponsor-logo:hover {
+            transform: scale(1.05);
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="https://i.imgur.com/QyDZEnG.jpeg" alt="Pedala IF Logo" class="h-12 w-auto">
+                <h1 class="text-xl md:text-2xl font-bold text-green-600">Pedala IF</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#beneficios" class="text-gray-700 hover:text-green-600 transition">Benefícios</a>
+                <a href="#como-usar" class="text-gray-700 hover:text-green-600 transition">Como Usar</a>
+                <a href="#contato" class="text-gray-700 hover:text-green-600 transition">Contato</a>
+            </nav>
+            <button class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="bg-gradient-to-r from-green-50 to-green-100 py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="w-full">
+                <h1 class="text-4xl md:text-5xl font-bold text-green-800 mb-4 text-center">Pedale pelo Campus Rio Verde</h1>
+                <p class="text-lg text-gray-700 mb-4 max-w-2xl mx-auto text-justify">
+                    O Pedala IF é um sistema colaborativo de compartilhamento de bicicletas no IF Goiano - Campus Rio Verde.
+              
+                    O sistema é gratuito e disponível a todos estudantes, servidores e visitantes.
+                </p>
+                <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto text-justify">
+                    Sustentabilidade, saúde e mobilidade em um único sistema. Viva a experiência de pedalar pelo campus!
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="#como-usar" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md">
+                        Como Usar
+                    </a>
+                    <a href="https://www.youtube.com/@PedalaIFGOIANO" target="_blank" class="bg-white hover:bg-gray-100 text-green-600 px-6 py-3 rounded-lg font-medium transition shadow-md border border-green-200">
+                        Ver Disponibilidade
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Vantagens do Pedala IF</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-green-50 rounded-xl p-6 transition card-hover">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-leaf text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-3">Sustentabilidade</h3>
+                    <p class="text-gray-700 text-justify">
+                        Reduza sua pegada de carbono enquanto se desloca pelo campus. Cada pedalada é um passo para um IF mais verde e sustentável.
+                    </p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-green-50 rounded-xl p-6 transition card-hover">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-heart text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-3">Saúde e Bem-estar</h3>
+                    <p class="text-gray-700 text-justify">
+                        Combine seus deslocamentos com exercício físico. Pedalar melhora sua saúde cardiovascular e reduz o estresse do dia a dia.
+                    </p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-green-50 rounded-xl p-6 transition card-hover">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-3">Sistema Inovador</h3>
+                    <p class="text-gray-700 text-justify">
+                       Projeto colaborativo e gratuito. Nossas bicicletas possuem rastreadores para segurança e monitoramento.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section id="como-usar" class="py-16 bg-gradient-to-r from-green-50 to-green-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Como usar o Pedala IF</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- Step 1 -->
+                <div class="flex items-start mb-10">
+                    <div class="step-number">1</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-green-800 mb-2">Localize as bicicletas</h3>
+                        <p class="text-gray-700">
+                            Veja no <a href="#mapa-apoio" class="text-green-600 hover:underline">mapa</a> a localização dos pontos de apoio. Posteriormente, verifique na nossa transmissão ao vivo a disponibilidade das bicicletas em tempo real.
+                        </p>
+                        <a href="https://www.youtube.com/@PedalaIFGOIANO" target="_blank" class="inline-block mt-3 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition text-sm">
+                            Ver disponibilidade
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="flex items-start mb-10">
+                    <div class="step-number">2</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-green-800 mb-2">Selecione uma bicicleta</h3>
+                        <p class="text-gray-700">
+                            Escolha uma bicicleta disponível em qualquer ponto de apoio do campus. Todas estão equipadas com rastreadores para sua segurança.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="flex items-start mb-10">
+                    <div class="step-number">3</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-green-800 mb-2">Devolva no ponto de apoio</h3>
+                        <p class="text-gray-700">
+                            Após o uso, devolva a bicicleta em qualquer ponto de apoio disponível próximo a você. <strong>Lembre-se: as bicicletas só podem ser deixadas nos pontos designados.</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Important Info -->
+                <div class="bg-white rounded-xl p-6 mt-8">
+                    <h3 class="text-xl font-bold text-green-800 mb-3">Informações Importantes</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                        <li>Serviço disponível para todos: estudantes, servidores e visitantes do IF Goiano - Campus Rio Verde.</li>
+                        <li>Não há cobrança para a utilização do sistema.</li>
+                        <li>Como medida de segurança, recomenda-se o uso de capacete.</li>
+                        <li>É obrigatório devolver a bicicleta em um dos pontos de apoio.</li>
+                    </ul>
+                </div>
+            </div>
+          
+            <div id="mapa-apoio" class="mt-12 text-center w-full mx-auto">
+    <img src="https://i.imgur.com/f4mMM2Q.jpeg" 
+         alt="Pontos de apoio no campus" 
+         class="mx-auto rounded-xl shadow-lg w-[160%] border-4 border-white">
+</div>
+    <p class="mt-4 text-gray-600 text-xs">Mapa dos pontos de apoio no IF Goiano - Campus Rio Verde</p>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Entre em Contato</h2>
+            
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-lg text-gray-700 mb-8">
+                    Tem dúvidas, sugestões ou quer saber mais sobre o projeto? Entre em contato conosco através dos canais abaixo:
+                </p>
+                
+                <div class="flex flex-wrap justify-center gap-6 mb-12">
+                    <a href="https://www.instagram.com/pedala_if" target="_blank" class="bg-green-50 hover:bg-green-100 p-4 rounded-full transition">
+                        <i class="fab fa-instagram text-green-600 text-2xl"></i>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                    
+                    <a href="mailto:pedalaifgoiano@gmail.com" class="bg-green-50 hover:bg-green-100 p-4 rounded-full transition">
+                        <i class="fas fa-envelope text-green-600 text-2xl"></i>
+                        <span class="sr-only">E-mail</span>
+                    </a>
+                    
+                    <a href="https://lnk.bio/PedalaIF" target="_blank" class="bg-green-50 hover:bg-green-100 p-4 rounded-full transition">
+                        <i class="fas fa-link text-green-600 text-2xl"></i>
+                        <span class="sr-only">Links</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Realization Section -->
+    <section class="bg-gradient-to-r from-green-50 to-green-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center text-gray-800 mb-8">Realização</h2>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <img src="https://i.imgur.com/WVeuUhb.png" alt="IF Goiano Logo" class="h-16 md:h-20 object-contain">
+                <img src="https://i.imgur.com/bxmrstn.png" alt="Institution Logo" class="h-16 md:h-20 object-contain">
+                <img src="https://i.imgur.com/LQlINcx.png" alt="Institution Logo" class="h-16 md:h-20 object-contain" style="height: 150px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Patrocinadores</h2>
+            
+            <!-- Diamond Sponsors -->
+            <div class="mb-16">
+                <h3 class="text-xl font-semibold text-center text-gray-700 mb-8 flex items-center justify-center gap-2">
+                    <i class="fas fa-gem text-blue-400"></i> Patrocinadores Diamante
+                </h3>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+         <img src="https://i.imgur.com/9WHVgj4.jpeg" alt="Diamond Sponsor" class="sponsor-logo h-32 w-44 md:h-36 md:w-48 object-contain">
+<img src="https://i.imgur.com/26r7D0e.jpeg" alt="Diamond Sponsor" class="sponsor-logo h-32 w-60 md:h-36 md:w-64 object-contain">
+<img src="https://i.imgur.com/ICiiRzY.jpeg" alt="Diamond Sponsor" class="sponsor-logo h-32 w-44 md:h-36 md:w-48 object-contain">
+                </div>
+            </div>
+            
+            <!-- Gold Sponsors -->
+            <div>
+                <h3 class="text-xl font-semibold text-center text-gray-700 mb-8 flex items-center justify-center gap-2">
+                    <i class="fas fa-medal text-yellow-500"></i> Patrocinadores Ouro
+                </h3>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+<img src="https://i.imgur.com/1VnXNPh.jpeg" alt="Gold Sponsor" class="sponsor-logo h-20 w-32 md:h-24 md:w-40 object-contain">
+<img src="https://i.imgur.com/gNYwzG1.png" alt="Gold Sponsor" class="sponsor-logo h-20 w-32 md:h-24 md:w-40 object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-3 mb-6 md:mb-0">
+                    <img src="https://i.imgur.com/QyDZEnG.jpeg" alt="Pedala IF Logo" class="h-10 w-auto">
+                    <h2 class="text-xl font-bold">Pedala IF</h2>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-green-200">IF Goiano - Campus Rio Verde</p>
+                    <p class="text-green-200">Rod. Sul Goiana, Km 01, Zona Rural</p>
+                    <p class="text-green-200">Rio Verde - GO, 75901-970</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-green-700 mt-6 pt-6 text-center text-green-300">
+                <p>© 2025 Pedala IF. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-green-600 text-white w-12 h-12 rounded-full shadow-lg hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Mobile Menu Toggle (placeholder functionality)
+        document.querySelector('.md\\:hidden').addEventListener('click', () => {
+            alert('Menu mobile seria implementado aqui');
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=LSC101222/site-do-pedala-if" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p><p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://deepsite.hf.co/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://deepsite.hf.co" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://deepsite.hf.co?remix=PEDALAIFGOIANO/pedala-if" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
