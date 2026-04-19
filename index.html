@@ -145,7 +145,7 @@
                 
                 <!-- Step 2 (Toma lugar do primeiro) -->
                 <div class="flex items-start mb-10">
-                    <div class="step-number">1</div>
+                    <div class="step-number size-10">1</div>
                     <div>
                         <h3 class="text-xl font-bold text-green-800 mb-2">Selecione uma bicicleta</h3>
                         <p class="text-gray-700">
@@ -156,7 +156,7 @@
                 
                 <!-- Step 3 (Toma lugar do segundo) -->
                 <div class="flex items-start mb-10">
-                    <div class="step-number">2</div>
+                    <div class="step-number size-10">2</div>
                     <div>
                         <h3 class="text-xl font-bold text-green-800 mb-2">Devolva no ponto de apoio</h3>
                         <p class="text-gray-700">
@@ -215,14 +215,14 @@
                     </a>
                 </div>
 
-                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <div class="relative flex flex-wrap justify-center gap-4 mb-12">
                   <p title="Copiar email do projeto"
-                    class="bg-green-50 hover:bg-green-100 p-4 rounded-lg transition text-sm text-gray-700"
+                    class="bg-green-50 hover:bg-green-100 cursor-pointer p-4 rounded-lg transition text-sm text-gray-700"
                     onclick="copyText(this, 'email-copiado')"
                   >
                     pedalaifgoiano@gmail.com
                   </p>
-                  <p id="email-copiado" class="hidden">Email Copiado!</p>
+                  <p id="email-copiado" class="absolute top-0 left-1/2 transform -translate-x-1/2 text-sm text-green-600" style="display: none;">Email Copiado!</p>
                 </div>
 
             </div>
