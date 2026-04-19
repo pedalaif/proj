@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedala IF - Compartilhamento de Bicicletas no IF Goiano</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -198,26 +199,30 @@
                 </p>
                 
                 <div class="flex flex-wrap justify-center gap-6 mb-8">
-                    <a href="https://www.instagram.com/pedala_if" target="_blank" class="bg-green-50 hover:bg-green-100 p-4 aspect-square rounded-full transition">
+                    <a href="https://www.instagram.com/pedala_if" target="_blank" class="bg-green-50 hover:bg-green-100 p-4 size-16 rounded-full transition">
                         <i class="fab fa-instagram text-green-600 text-2xl"></i>
                         <span class="sr-only">Instagram</span>
                     </a>
                     
-                    <a href="mailto:pedalaifgoiano@gmail.com" class="bg-green-50 hover:bg-green-100 p-4 aspect-square rounded-full transition">
+                    <a href="mailto:pedalaifgoiano@gmail.com" class="bg-green-50 hover:bg-green-100 p-4 size-16 rounded-full transition">
                         <i class="fas fa-envelope text-green-600 text-2xl"></i>
                         <span class="sr-only">E-mail</span>
                     </a>
                     
-                    <a href="https://lnk.bio/PedalaIF" target="_blank" class="bg-green-50 hover:bg-green-100 p-4 aspect-square rounded-full transition">
+                    <a href="https://lnk.bio/PedalaIF" target="_blank" class="bg-green-50 hover:bg-green-100 p-4 size-16 rounded-full transition">
                         <i class="fas fa-link text-green-600 text-2xl"></i>
                         <span class="sr-only">Links</span>
                     </a>
                 </div>
 
-                <div class="flex flex-wrap justify-center gap-6 mb-12">
-                  <code class="bg-green-50 hover:bg-green-100 p-4 rounded-lg transition text-sm text-gray-700" onclick="">
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                  <p title="Copiar email do projeto"
+                    class="bg-green-50 hover:bg-green-100 p-4 rounded-lg transition text-sm text-gray-700"
+                    onclick="copyText(this, 'email-copiado')"
+                  >
                     pedalaifgoiano@gmail.com
-                  </code>
+                  </p>
+                  <p id="email-copiado" class="hidden">Email Copiado!</p>
                 </div>
 
             </div>
